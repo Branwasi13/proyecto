@@ -8,69 +8,30 @@
 
 /*imagen de fondo de la pagina*/
 body{
-    color: gold;
     background-color: #171717;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23151515' %3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='1'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-/*cambio de color a los seccion*/
-section{
-    color:yellow;
-}
-
-
 /*comienza el sub menu*/
-
 nav{
+    background-color: #ffab23;
     background-color:#171717;
     height: auto;
-    grid-area: navbar;
 }
-
-ul{
-    list-style-type: none;
-    font-size: 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(9, auto);
-    justify-items:center ;
-    align-items: center;
-}
-
-li{
-    display: inline-block;
-    width: auto;
-    position: relative;
-    font-size: 16px;
-}
-
-ul ul {
-   position: absolute;
-   display: none;
-}
-
-ul ul li {
-   display: block;
-   background-color:#171717;
-   width: 100%;
-}
-
-ul li:hover ul {
-   display: block;
+.navegacion{
+    color:white;
 }
 
 /*quitar la decoracion de las anclas*/
 a{
-    color:yellow;
     text-decoration: none;
 }
 
 /*alineacion de los titulos (sobre nosotros, servicion y contacto)*/
 .titulos{
-    color: yellow;
-    text-align: center;
+    color: whitesmoke;
     font-family: 'Lobster', cursive;
-    margin-top: 50px;
+    margin-top: .5em;
     text-decoration: underline;
 }
 
@@ -79,8 +40,6 @@ a{
     margin-top: 35px;
     text-decoration: underline;
 }
-
-
 
 /*botones*/
 
@@ -106,52 +65,15 @@ a{
 }
 
 /*header, logo y buscador*/
-
-header{
-    grid-area: cabecera;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: gold;
-    background: linear-gradient(gold 3%, rgb(20, 20, 20) 100%);
-    padding-top: 1em;
-}
 .logo:hover{
     opacity: 0.75;
 }
-.buscador input{
-    height: 2em;
-    width: 25rem;
-    background-color: gold;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    color: gold;
-
-}
-.buscador input:focus{
-    background-color:#171717;
-}
-.buscador button{
-    height: 2em;
-    background-color: gold;
-    width: 5rem;
-}
-.buscador button:hover{
-    background-color: #171717;
-    text-transform: capitalize;
-    color: gold;
-}
-
 /*footer*/
 
 footer{
     font-family: 'Neonderthaw', cursive;
-    grid-area: pie;
-    background-color: gold;
-    color: #171717;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+    background-color:#171717;
+    color: whitesmoke;
 }
 #redes{
     margin-top: .5em;
@@ -163,13 +85,6 @@ footer{
 }
 .redes__sociales:hover{
     opacity: 0.75;
-}
-/*index*/
-
-#fotos{
-    grid-area: fondos;
-    animation-duration: 2s;
-    animation-name: aparecer;
 }
 /*grids areas (index)*/
 #index{
@@ -330,7 +245,7 @@ footer{
 
 /*vista mobil (index)*/
 
-@media only screen and (max-width: 320px)  {
+@media only screen and (min-width: 320px)  {
     .buscador input{
         height: 2em;
         width: 18em;

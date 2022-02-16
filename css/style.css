@@ -11,9 +11,25 @@ body{
     background-color: #0e0e0efb;
 }
 
+/*header, logo y buscador*/
+.logo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logo:hover{
+    opacity: 0.75;
+}
+
 /*navbar*/
+
+.barra{
+    padding-top: 2rem;
+}
 .navegacion{
     color:white;
+}
+.buscador{
+    width: 400px;
 }
 
 /*quitar la decoracion de las anclas*/
@@ -54,16 +70,14 @@ a{
     background: linear-gradient(#ffab23, #ffec64);
 }
 
-/*header, logo y buscador*/
-.logo:hover{
-    opacity: 0.75;
-}
+
 /*footer*/
 
 footer{
     font-family: 'Neonderthaw', cursive;
     background-color:#171717;
     color: whitesmoke;
+    margin-top: 3rem;
 }
 #redes{
     margin-top: .5em;
@@ -84,53 +98,6 @@ footer{
     grid-template-areas: "cabecera" "navbar" "fondos" "pie";
 }
 
-/*productos
-
-#ProductosPrincipal{
-    grid-area: productos;
-    margin-left: 1rem;
-}
-.productos{
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    justify-items: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    align-items:center;
-}
-.ventas--precios{
-    text-align: center;
-    margin-bottom: 1em;
-}*/
-/*videos de cada section
-.articulos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-family: 'Rowdies', cursive;
-    margin-top: 2em;
-}
-.articulos__pieDeVideos{
-    width: 80%;
-}*/
-
-/*grids areas (productos)
-#productosCuerpo{
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:repeat(4, auto);
-    grid-template-areas: 
-    "cabecera" 
-    "navbar"  
-    "productos" 
-    "pie";
-}*/
-
 /*servicios*/
 
 .principal{
@@ -143,21 +110,24 @@ footer{
     font-family: 'Oswald', sans-serif;
 }
 
-/*contacto
-.ubicacion__titulo, .tituloContacto{
-    color: yellow;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    text-decoration: underline;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}*/
+/*ubicacion*/
 .ubicacion{
     margin-bottom: 5em;
 }
 
-
-
+/*productos*/
+.productos{
+    margin-top: 2rem;
+}
+.caracteristicas {
+    color: whitesmoke;
+}
+.ventas--precios{
+    color: gold;
+}
+.ventas--botones{
+    margin-top: 1rem;
+}
 
 /*contenido principal de la pagina (sobre nosotros)*/
 
@@ -249,6 +219,9 @@ footer{
         margin-left: 0%;
         margin-right: 0%;
     }
+    .barra{
+        padding-top: 1rem;
+    }
     .imagenes{
         width: 100%;
     }
@@ -263,6 +236,9 @@ footer{
     .redes__sociales{
         margin-left: .5em;
         margin-right: .5em;
+    }
+    .parrafos{
+        text-align: center;
     }
     textarea{
         width: 250px;

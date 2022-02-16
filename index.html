@@ -18,55 +18,64 @@
 <body>
 
     <!--comienzo del header-->
-    <header class="container-fluid: 100%">
-
-        <!--comienzo de la navbar-->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="imagenes/fondos y iconos/team gamers.png" alt="logo"
-                    width="150"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="paginas/productos.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" >
-                                productos
-                            </a>
-                            <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item navegacion" href="paginas/Procesadores.html">Procesadores</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/motherboards.html">Motherboars</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Placas de video.html">Placas de Video</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Memorias ram.html">Memorias ram</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Monitores.html">Monitores</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Gabinetes.html">Gabinetes</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Fuentes.html">Fuentes</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Perifericos.html">Perifericos</a></li>
-                                <li><a class="dropdown-item navegacion" href="paginas/Discoduro.html">Disco duro</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="paginas/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="paginas/contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="paginas/sobre nosotros.html">Sobre nosotros</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-light" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <header class="container-fluid bg-dark ">
+        <div class="row text-center">
+            <a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="imagenes/fondos y iconos/team gamers.png" alt="logo" width="200px">
+            </a>
+            <form class="d-flex justify-content-center">
+                <input class="form-control me-2 buscador" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
+        </div>
     </header>
+    <!--comienzo de la navbar-->
+    <nav class="barra navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="paginas/productos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            productos
+                        </a>
+                        <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item navegacion" href="paginas/Procesadores.html">Procesadores</a>
+                            </li>
+                            <li><a class="dropdown-item navegacion" href="paginas/motherboards.html">Motherboars</a>
+                            </li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Placas de video.html">Placas de Video</a></li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Memorias ram.html">Memorias ram</a></li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Monitores.html">Monitores</a></li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Gabinetes.html">Gabinetes</a></li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Fuentes.html">Fuentes</a></li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Perifericos.html">Perifericos</a>
+                            </li>
+                            <li><a class="dropdown-item navegacion" href="paginas/Discoduro.html">Disco duro</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="paginas/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="paginas/sobre nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <!--comienza el contenido principal-->
     <main class="container-fluid">
@@ -159,7 +168,9 @@
     </footer>
 
     <!--js bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

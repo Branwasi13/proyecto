@@ -16,59 +16,62 @@
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
 </head>
 
-<body id="productosCuerpo">
+<body>
 
     <!--comienzo del header-->
-    <header>
-
-        <!--comienzo de la navbar-->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo img-fluid"
-                        src="../imagenes/fondos y iconos/team gamers.png" alt="logo" width="150"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="productos.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                productos
-                            </a>
-                            <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item navegacion" href="Procesadores.html">Procesadores</a></li>
-                                <li><a class="dropdown-item navegacion" href="motherboards.html">Motherboars</a></li>
-                                <li><a class="dropdown-item navegacion" href="Placas de video.html">Placas de Video</a>
-                                </li>
-                                <li><a class="dropdown-item navegacion" href="Memorias ram.html">Memorias ram</a></li>
-                                <li><a class="dropdown-item navegacion" href="Monitores.html">Monitores</a></li>
-                                <li><a class="dropdown-item navegacion" href="Gabinetes.html">Gabinetes</a></li>
-                                <li><a class="dropdown-item navegacion" href="Fuentes.html">Fuentes</a></li>
-                                <li><a class="dropdown-item navegacion" href="Perifericos.html">Perifericos</a></li>
-                                <li><a class="dropdown-item navegacion" href="Discoduro.html">Disco duro</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="sobre nosotros.html">Sobre nosotros</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-light" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+    <header class="container-fluid bg-dark ">
+        <div class="row text-center">
+            <a class="navbar-brand" href="../index.html"><img class="logo img-fluid" src="../imagenes/fondos y iconos/team gamers.png" alt="logo" width="200px">
+            </a>
+            <form class="d-flex justify-content-center">
+                <input class="form-control me-2 buscador" type="search" placeholder="Buscar..." aria-label="Search">
+                <button class="btn btn-light" type="submit">Buscar</button>
+            </form>
+        </div>
     </header>
+    <!--comienzo de la navbar-->
+    <nav class="barra navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="productos.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" >
+                            productos
+                        </a>
+                        <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item navegacion" href="Procesadores.html">Procesadores</a></li>
+                            <li><a class="dropdown-item navegacion" href="motherboards.html">Motherboars</a></li>
+                            <li><a class="dropdown-item navegacion" href="Placas de video.html">Placas de Video</a></li>
+                            <li><a class="dropdown-item navegacion" href="Memorias ram.html">Memorias ram</a></li>
+                            <li><a class="dropdown-item navegacion" href="Monitores.html">Monitores</a></li>
+                            <li><a class="dropdown-item navegacion" href="Gabinetes.html">Gabinetes</a></li>
+                            <li><a class="dropdown-item navegacion" href="Fuentes.html">Fuentes</a></li>
+                            <li><a class="dropdown-item navegacion" href="Perifericos.html">Perifericos</a></li>
+                            <li><a class="dropdown-item navegacion" href="Discoduro.html">Disco duro</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!--contenido principal de la pagina-->
     <main>
@@ -101,14 +104,14 @@
                 </div>
             </article>
 
-            <article class="container">
+            <article class="container productos">
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <img class="pruductos__ImagenDeLosProductos" src="../imagenes/motherboards/motherboars.png"
                             width="250" alt="Z690 TOMAHAWK">
                     </div>
                     <div class="col-md-4">
-                        <p class="pruductos__descripcionDeLosProductos">
+                        <p class="caracteristicas">
                             Socket: LGA 1700
                             <br>
                             Ranuras DIMM: 4
@@ -128,7 +131,7 @@
                             HDMI: 1
                         </p>
                     </div>
-                    <div class="ventas col-md-4">
+                    <div class="ventas col-md-4 text-center">
                         <div class="ventas--precios">$230.00 (dolares)</div>
                         <button type="button" class="ventas--botones">Comprar</button>
                         <button type="button" class="ventas--botones">Agregar al carrito</button>
@@ -143,7 +146,7 @@
                             width="250" alt="Asus Prime A520M">
                     </div>
                     <div class="col-md-4">
-                        <p class="pruductos__descripcionDeLosProductos">
+                        <p class="caracteristicas">
                             Socket: AM4
                             <br>
                             RANURAS DIMM: 2
@@ -163,7 +166,7 @@
                             HDMI: 1
                         </p>
                     </div>
-                    <div class="ventas col-md-4">
+                    <div class="ventas col-md-4 text-center">
                         <div class="ventas--precios">$67.00 (dolares)</div>
                         <button type="button" class="ventas--botones">Comprar</button>
                         <button type="button" class="ventas--botones">Agregar al carrito</button>
@@ -178,7 +181,7 @@
                             width="250" alt="X570 AORUS PRO">
                     </div>
                     <div class="col-md-4">
-                        <p class="pruductos__descripcionDeLosProductos">
+                        <p class="caracteristicas">
                             Socket: AM4
                             <br>
                             RANURAS DIMM: 4
@@ -198,7 +201,7 @@
                             HDMI: 1
                         </p>
                     </div>
-                    <div class="ventas col-md-4">
+                    <div class="ventas col-md-4 text-center">
                         <div class="ventas--precios">$220.00 (dolares)</div>
                         <button type="button" class="ventas--botones">Comprar</button>
                         <button type="button" class="ventas--botones">Agregar al carrito</button>

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--link del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
@@ -15,16 +16,16 @@
     <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
 </head>
 
-<body id="productosCuerpo">
+<body>
 
     <!--comienzo del header-->
-    <header class="container-fluid: 100%">
+    <header>
 
         <!--comienzo de la navbar-->
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo img-fluid" src="../imagenes/fondos y iconos/team gamers.png" alt="logo"
-                    width="150"></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo img-fluid"
+                        src="../imagenes/fondos y iconos/team gamers.png" alt="logo" width="150"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -33,14 +34,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="productos.html" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" >
+                            <a class="nav-link dropdown-toggle active" href="productos.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 productos
                             </a>
                             <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item navegacion" href="Procesadores.html">Procesadores</a></li>
                                 <li><a class="dropdown-item navegacion" href="motherboards.html">Motherboars</a></li>
-                                <li><a class="dropdown-item navegacion" href="Placas de video.html">Placas de Video</a></li>
+                                <li><a class="dropdown-item navegacion" href="Placas de video.html">Placas de Video</a>
+                                </li>
                                 <li><a class="dropdown-item navegacion" href="Memorias ram.html">Memorias ram</a></li>
                                 <li><a class="dropdown-item navegacion" href="Monitores.html">Monitores</a></li>
                                 <li><a class="dropdown-item navegacion" href="Gabinetes.html">Gabinetes</a></li>
@@ -69,20 +71,21 @@
     </header>
 
     <!--contenido principal de la pagina-->
-    <main id="ProductosPrincipal">
+    <main>
+
         <!--comienza la seccion de gabinetes-->
         <section>
             <div>
-                <h2 class="titulosDeProductos animate__animated animate__bounceIn">Gabinetes</h2>
+                <h2 class="titulos text-center">Gabinetes</h2>
             </div>
-            <article>
-                <div class="articulos">
-                    <iframe class="articulos__videosDeLosProductos" width="600" height="300"
+            <article class="container">
+                <div class="row align-items-center">
+                    <iframe class="col-md videos" width="600" height="300"
                         src="https://www.youtube.com/embed/KM7hcwoyyiw" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
-                    <p class="articulos__pieDeVideos animate__animated animate__backInRight">
+                    <p class="parrafos col-md">
                         El gabinete de una computadora, aunque no lo parezca, es uno de los elementos más importantes de
                         la PC, ya que su principal tarea es la de alojar y mantener en su interior los diversos
                         dispositivos que la componen. Decimos que es importante, debido a que no cualquier gabinete
@@ -91,64 +94,82 @@
                         donde la elección de un buen gabinete se vuelve una tarea un poco más complicada.
                     </p>
                 </div>
+            </article>
 
-                <div class="productos">
-                    <img class="pruductos__ImagenDeLosProductos" src="../imagenes/gabinetes/gabinete nxtz.png"
-                        width="150" alt="H510 Elite">
-                    <p class="pruductos__descripcionDeLosProductos">
-                        Compatibilidad de la placa: ATX
-                        <br>
-                        Color: Blanco
-                        <br>
-                        Material: Vidrio templado
-                        <br>
-                        Cuenta de abanicos: 2
-                        <br>
-                        Número de ranuras de expansión: 7
-                    </p>
-                    <div class="ventas">
+            <article class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="pruductos__ImagenDeLosProductos" src="../imagenes/gabinetes/gabinete nxtz.png"
+                            width="150" alt="H510 Elite">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="pruductos__descripcionDeLosProductos">
+                            Compatibilidad de la placa: ATX
+                            <br>
+                            Color: Blanco
+                            <br>
+                            Material: Vidrio templado
+                            <br>
+                            Cuenta de abanicos: 2
+                            <br>
+                            Número de ranuras de expansión: 7
+                        </p>
+                    </div>
+                    <div class="ventas col-md-4">
                         <div class="ventas--precios">$174.99 (dolares)</div>
                         <button type="button" class="ventas--botones">Comprar</button>
                         <button type="button" class="ventas--botones">Agregar al carrito</button>
                     </div>
                 </div>
+            </article>
 
-                <div class="productos">
-                    <img class="pruductos__ImagenDeLosProductos" src="../imagenes/gabinetes/gabinete gigabyte.png"
-                        width="150" alt="H510">
-                    <p class="pruductos__descripcionDeLosProductos">
-                        Compatibilidad de la placa: ATX
-                        <br>
-                        Color: Negro
-                        <br>
-                        Material: Vidrio templado
-                        <br>
-                        Total de Puertos USB: 1
-                        <br>
-                        Número de ranuras de expansión: 7
-                    </p>
-                    <div class="ventas">
+            <article class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="pruductos__ImagenDeLosProductos" src="../imagenes/gabinetes/gabinete gigabyte.png"
+                            width="150" alt="H510">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="pruductos__descripcionDeLosProductos">
+                            Compatibilidad de la placa: ATX
+                            <br>
+                            Color: Negro
+                            <br>
+                            Material: Vidrio templado
+                            <br>
+                            Total de Puertos USB: 1
+                            <br>
+                            Número de ranuras de expansión: 7
+                        </p>
+                    </div>
+                    <div class="ventas col-md-4">
                         <div class="ventas--precios">$100.00 (dolares)</div>
                         <button type="button" class="ventas--botones">Comprar</button>
                         <button type="button" class="ventas--botones">Agregar al carrito</button>
                     </div>
                 </div>
+            </article>
 
-                <div class="productos">
-                    <img class="pruductos__ImagenDeLosProductos" src="../imagenes/gabinetes/gabinete nxtz.png"
-                        width="150" alt="nxtz">
-                    <p class="pruductos__descripcionDeLosProductos">
-                        Compatibilidad de la placa: ATX
-                        <br>
-                        Color: Negro
-                        <br>
-                        Material: Acrilico
-                        <br>
-                        Total de Puertos USB: 2
-                        <br>
-                        Número de ranuras de expansión: 7
-                    </p>
-                    <div class="ventas">
+            <article class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="pruductos__ImagenDeLosProductos" src="../imagenes/gabinetes/gabinete nxtz.png"
+                            width="150" alt="nxtz">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="pruductos__descripcionDeLosProductos">
+                            Compatibilidad de la placa: ATX
+                            <br>
+                            Color: Negro
+                            <br>
+                            Material: Acrilico
+                            <br>
+                            Total de Puertos USB: 2
+                            <br>
+                            Número de ranuras de expansión: 7
+                        </p>
+                    </div>
+                    <div class="ventas col-md-4">
                         <div class="ventas--precios">$50.00 (dolares)</div>
                         <button type="button" class="ventas--botones">Comprar</button>
                         <button type="button" class="ventas--botones">Agregar al carrito</button>
@@ -159,7 +180,7 @@
         <!--termina la seccion de gabinetes-->
     </main>
 
-    <footer>
+    <footer class="container-fluid text-center">
         <div class="nuestrasRedes">
             <h3>Nuestras redes sociales</h3>
         </div>
@@ -180,7 +201,9 @@
         <div class="derechos">© Team gamers 2022 - Todos los Derechos Reservados.</div>
     </footer>
     <!--js bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

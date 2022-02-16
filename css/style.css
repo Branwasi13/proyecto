@@ -26,14 +26,10 @@ a{
     color: whitesmoke;
     font-family: 'Lobster', cursive;
     margin-top: .5em;
+    margin-bottom: 1rem;
     text-decoration: underline;
 }
 
-.titulosDeProductos{
-    text-align: center;
-    margin-top: 35px;
-    text-decoration: underline;
-}
 
 /*botones*/
 
@@ -88,7 +84,7 @@ footer{
     grid-template-areas: "cabecera" "navbar" "fondos" "pie";
 }
 
-/*productos*/
+/*productos
 
 #ProductosPrincipal{
     grid-area: productos;
@@ -107,8 +103,8 @@ footer{
 .ventas--precios{
     text-align: center;
     margin-bottom: 1em;
-}
-/*videos de cada section*/
+}*/
+/*videos de cada section
 .articulos{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,9 +117,9 @@ footer{
 }
 .articulos__pieDeVideos{
     width: 80%;
-}
+}*/
 
-/*grids areas (productos)*/
+/*grids areas (productos)
 #productosCuerpo{
     display: grid;
     grid-template-columns:1fr;
@@ -133,19 +129,21 @@ footer{
     "navbar"  
     "productos" 
     "pie";
-}
+}*/
 
 /*servicios*/
 
 .principal{
-    width: 70% !important;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 3rem;
 }
 .serviciosParrafos {
-    color: whitesmoke;
+    color: wheat;
     font-family: 'Oswald', sans-serif;
 }
 
-/*contacto*/
+/*contacto
 .ubicacion__titulo, .tituloContacto{
     color: yellow;
     text-align: center;
@@ -153,59 +151,28 @@ footer{
     text-decoration: underline;
     margin-top: 2em;
     margin-bottom: 1em;
-}
+}*/
 .ubicacion{
     margin-bottom: 5em;
 }
 
-#contacto{
-    grid-area: contacto;
-}
 
-/*grids area (contacto)*/
-#contactoCuerpo{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:repeat(4, auto);
-    grid-template-areas: "cabecera" "navbar" "contacto" "pie";
-}
+
 
 /*contenido principal de la pagina (sobre nosotros)*/
 
-#sobreNosotros{
-    grid-area: principal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Source Serif 4', sans-serif;
-    width: 50%;
-    margin-left: 25%;
-}
-#metodosDePago{
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20em;
-}
 .pagos{
     margin-left: 1.5rem;
     margin-right: 1.5em;
+    margin-bottom: 2rem;
 }
-.separacionDelosTitulo{
-    margin-top: 2rem;
+.parrafos{
+    color: wheat;
 }
-.separacionDelosTirulo-parrafos{
-    text-align:center;
-    color: yellow;
+.parrafos__resaltado{
+    text-decoration: underline;
 }
 
-/*grids areas (body sobrenosotros)*/
-#cuerpoSobreNosotros{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:repeat(4, auto);
-    grid-template-areas: "cabecera" "navbar" "principal" "pie";
-}
 
 /*vista mobil (index)
 
@@ -279,20 +246,27 @@ footer{
 
 @media only screen and (max-width: 768px) {
     .principal{
-        width: 100% !important;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .imagenes{
         width: 100%;
     }
     .videos{
         width: 100%;
-        height: 200px;
+        height: 250px;
     }
     .serviciosParrafos {
         color: whitesmoke;
         font-family: 'Oswald', sans-serif;
     }
-
+    .redes__sociales{
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+    textarea{
+        width: 250px;
+    }
 }
 
 /*vista mobile (contacto)

@@ -19,6 +19,9 @@ body{
 .logo:hover{
     opacity: 0.75;
 }
+.buscador{
+    width: 400px;
+}
 
 /*navbar*/
 
@@ -28,9 +31,17 @@ body{
 .navegacion{
     color:white;
 }
-.buscador{
-    width: 400px;
+.navegacion:focus{
+    background-color: #ffab23;
 }
+.items{
+    margin-left: 3rem ;
+    margin-right: 3rem ;
+}
+.items:hover{
+    text-decoration: underline;
+}
+
 
 /*quitar la decoracion de las anclas*/
 a{
@@ -143,76 +154,7 @@ footer{
     text-decoration: underline;
 }
 
-
-/*vista mobil (index)
-
-@media only screen and (min-width: 320px)  {
-    .buscador input{
-        height: 2em;
-        width: 18em;
-        background-color: gold;
-        margin-top: 3em;
-        margin-bottom: 1em;
-        
-    }
-    .buscador button{
-        height: 2em;
-        background-color: gold;
-        width: 3rem;
-    }
-    .redes__sociales{
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-    .derechos{
-        font-size: 12px;
-    }
-}
-
-/*vista mobile (productos)
-@media only screen and (max-width: 320px){
-    #ProductosPrincipal{
-        margin-left: 0;
-    }
-    .productos{
-        width:auto;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 3em;
-        margin-left: 1em;
-        margin-bottom: 3em;
-        align-items:center;
-    }
-    .pruductos__ImagenDeLosProductos{
-        margin-bottom: 1rem;
-    }
-    .pruductos__descripcionDeLosProductos{
-        font-size: 15px;
-        margin-bottom: 1rem;
-    }
-    .ventas--precios{
-        text-align: center;
-        margin-bottom: 1em;
-    }
-    /*videos de cada section
-    .articulos{
-        display:flex;
-        flex-wrap: wrap;
-        font-size: 14px;
-        margin-top: 2em;
-    }
-    .articulos__videosDeLosProductos{
-        height: 200px;
-    }
-    .redes__sociales{
-    margin-left: .5em;
-    margin-right: .5em;
-    }
-    .derechos{
-    font-size: 12px;
-    }
-}*/
-/*vista mobile (servicios)*/
+/*vista mobile*/
 
 @media only screen and (max-width: 768px) {
     .principal{
@@ -245,48 +187,3 @@ footer{
     }
 }
 
-/*vista mobile (contacto)
-
-@media only screen and (max-width: 320px) {
-    textarea{
-        width: 300px;
-    }
-    iframe{
-        height: 300px;
-    }
-    .redes__sociales{
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-    .derechos{
-        font-size: 12px;
-    }
-}
-
-/*vista mobile (sobre nosotros)
-
-@media only screen and (max-width: 320px) {
-    
-    #sobreNosotros{
-        width: 100%;
-        margin: 0;
-    }
-    #metodosDePago{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 2em;
-    }
-    .pagos{
-        margin-top: .5rem;
-
-    }
-    .redes__sociales{
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-    .derechos{
-        font-size: 12px;
-    }
-}
-*/

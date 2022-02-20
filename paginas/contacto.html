@@ -9,7 +9,8 @@
     <!--favicon de la pagina-->
     <link rel="shortcut icon" href="../imagenes/fondos y iconos/favicon.ico" type="image/x-icon">
     <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--link del css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css">
@@ -20,7 +21,8 @@
     <!--comienzo del header-->
     <header class="container-fluid bg-dark ">
         <div class="row text-center">
-            <a class="navbar-brand" href="../index.html"><img class="logo img-fluid" src="../imagenes/fondos y iconos/team gamers.png" alt="logo" width="200px">
+            <a class="navbar-brand" href="../index.html"><img class="logo img-fluid"
+                    src="../imagenes/fondos y iconos/team gamers.png" alt="logo" width="200px">
             </a>
             <form class="d-flex justify-content-center">
                 <input class="form-control me-2 buscador" type="search" placeholder="Buscar..." aria-label="Search">
@@ -43,8 +45,8 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item dropdown items">
-                        <a class="nav-link dropdown-toggle active" href="productos.html" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" > productos
+                        <a class="nav-link dropdown-toggle active" href="productos.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false"> productos
                         </a>
                         <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item navegacion" href="Procesadores.html">Procesadores</a></li>
@@ -73,32 +75,60 @@
     </nav>
 
     <!--contenido principal la pagina-->
-    <main id="contacto">
+    <main>
         <!--comienza el formulario de contacto-->
         <section class="container">
             <div class="row text-center">
                 <h2 class="titulos">Contactarse con nosotros</h2>
             </div>
-            <form class="border border-white">
-                <fieldset class="parrafos">
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" placeholder="Ingrese su Nombre" name="Nombre">
-                    <br><br>
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" placeholder="Ingrese su Apellido" name="Apellido">
-                    <br><br>
-                    <label for="email">email:</label>
-                    <input type="email" placeholder="Ingrese su email" name="email">
-                    <br><br>
-                    <label for="Numero">Numero telefono:</label>
-                    <input type="number" placeholder=" Ingrese su Numero" name="Numero">
-                    <br><br>
-                    <textarea name="Descripcion" id="" cols="50" rows="10" placeholder="Descripcion"></textarea>
-                    <div input type="checkbox" value="1">Queres recibir nuestras noticias?</div>
-                    <br><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Eliminar">
-                </fieldset>
+            <form class="formulario">
+                <div class="form-row contacto">
+                    <div class="col-md-4">
+                        <label for="Nombre">Nombre:<span class="red"></span></label>
+                        <input type="text" class="form-control" name="Nombre" required>
+                    </div>
+                </div>
+                <div class="form-row contacto">
+                    <div class="col-md-4">
+                        <label for="validarApellidos">Apellidos:<span class="red"></span></label>
+                        <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+                    </div>
+                </div>
+                <div class="form-row contacto">
+                    <div class="col-md-4">
+                        <label for="Email">Email:<span class="red"></span></label>
+                        <input type="email" class="form-control" id="Email" name="Email" required>
+                    </div>
+                </div>
+                <div class="form-row contacto">
+                    <div class="col-md-4">
+                        <label for="Telefono">Teléfono:</label>
+                        <input type="number" class="form-control" id="Telefono" name="validarTelefono" max="999999999">
+                    </div>
+                </div>
+                <div class="form-row contacto">
+                    <div class="col-md-4">
+                        <label for="Opcion">Tema:<span class="red"></span></label>
+                        <select class="custom-select" name="Opcion" required>
+                            <option selected disabled>Selecciona...</option>
+                            <option value="Problema con acceso a Web">Problema con acceso a Web</option>
+                            <option value="Propuesta de colaboración">Problema con algun producto</option>
+                            <option value="Eliminar mi usuario de la Web">Trabajar con nosotros</option>
+                            <option value="Otras cuestiones">Otras cuestiones</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row contacto">
+                    <div class="col-md">
+                        <label for="Mensaje">Mensaje:<span class="red"></span></label>
+                        <textarea class="form-control Mensaje" name="Mensaje" rows="5" cols="10"
+                            placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="form-row contacto">
+                    <button class="btn contacto__botones1 bg-dark" type="submit" name="submit">Enviar</button>
+                    <button class="btn contacto__botones2 bg-light" type="reset" name="reset">Limpiar</button>
+                </div>
             </form>
         </section>
 
@@ -123,19 +153,25 @@
             <h3>Nuestras redes sociales</h3>
         </div>
         <div id="redes">
-            <a class="redes__sociales" href="https://es-la.facebook.com/" target="_blank"><img src="../imagenes/redes sociales/facebook.png" alt="facebook" width="40">
+            <a class="redes__sociales" href="https://es-la.facebook.com/" target="_blank"><img
+                    src="../imagenes/redes sociales/facebook.png" alt="facebook" width="40">
             </a>
-            <a class="redes__sociales" href="https://www.instagram.com/" target="_blank"><img src="../imagenes/redes sociales/instagram.png" alt="instagram" width="45">
+            <a class="redes__sociales" href="https://www.instagram.com/" target="_blank"><img
+                    src="../imagenes/redes sociales/instagram.png" alt="instagram" width="45">
             </a>
-            <a class="redes__sociales" href="https://twitter.com/" target="_blank"><img src="../imagenes/redes sociales/twitter.png" alt="twitter" width="40">
+            <a class="redes__sociales" href="https://twitter.com/" target="_blank"><img
+                    src="../imagenes/redes sociales/twitter.png" alt="twitter" width="40">
             </a>
-            <a class="redes__sociales" href="https://www.linkedin.com/home" target="_blank"><img src="../imagenes/redes sociales/linkedin.png" alt="linkedin" width="40">
+            <a class="redes__sociales" href="https://www.linkedin.com/home" target="_blank"><img
+                    src="../imagenes/redes sociales/linkedin.png" alt="linkedin" width="40">
             </a>
         </div>
         <div class="derechos">© Team gamers 2022 - Todos los Derechos Reservados.</div>
     </footer>
     <!--js bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

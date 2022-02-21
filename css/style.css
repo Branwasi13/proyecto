@@ -142,7 +142,26 @@ footer{
 
 /*contenido principal de la pagina (sobre nosotros)*/
 
+.sobreNosotros{
+    margin-top: .5rem;
+    animation-name: aparicion;
+    animation-duration: 3s;
+}
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
 .pagos{
+    margin-top: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5em;
     margin-bottom: 2rem;

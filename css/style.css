@@ -7,8 +7,14 @@
 }
 
 /*color de fondo de la pagina*/
+
 body{
     background-color: #0e0e0efb;
+}
+
+/*quitar la decoracion de las anclas*/
+a{
+    text-decoration: none;
 }
 
 /*header, logo y buscador*/
@@ -16,39 +22,39 @@ body{
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
+
 .logo:hover{
     opacity: 0.75;
 }
+
 .buscador{
     width: 400px;
 }
+
 .buscador:focus{
     box-shadow: none;
 }
 
 /*navbar*/
-
 .barra{
     padding-top: .5rem;
 }
+
 .navegacion{
     color:white;
 }
+
 .navegacion:focus{
     background-color: #ffab23;
 }
+
 .items{
     margin-left: 3rem ;
     margin-right: 3rem ;
 }
+
 .items:hover{
     text-decoration: underline;
-}
-
-
-/*quitar la decoracion de las anclas*/
-a{
-    text-decoration: none;
 }
 
 /*alineacion de los titulos y decoracion*/
@@ -60,9 +66,7 @@ a{
     text-decoration: underline;
 }
 
-
 /*botones de ventas*/
-
 .ventas--botones {
     font-size:15px;
     font-family:Arial;
@@ -84,56 +88,38 @@ a{
     background: linear-gradient(#ffab23, #ffec64);
 }
 
-
-/*footer*/
-
-footer{
-    font-family: 'Neonderthaw', cursive;
-    background-color:#171717;
-    color: whitesmoke;
-    margin-top: 3rem;
-}
-#redes{
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-.redes__sociales{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-}
-.redes__sociales:hover{
-    opacity: 0.75;
-}
-
 /*servicios*/
-
 .principal{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 3rem;
 }
+
 .serviciosParrafos {
     color: wheat;
     font-family: 'Oswald', sans-serif;
 }
 
 /*productos*/
-
 .productos{
     margin-top: 4rem;
+    animation-name: aparicion;
+    animation-duration: 2s;
 }
+
 .caracteristicas {
     color: whitesmoke;
 }
+
 .ventas--precios{
     color: gold;
 }
+
 .ventas--botones{
     margin-top: 1rem;
 }
 
 /*contacto/ubicaion*/
-
 .ubicacion{
     margin-bottom: 5em;
 }
@@ -179,6 +165,7 @@ footer{
     animation-name: aparicion;
     animation-duration: 3s;
 }
+
 @keyframes aparicion{
     0%{
         opacity: 0;
@@ -192,21 +179,45 @@ footer{
         opacity: 1;
     }
 }
+
 .pagos{
     margin-top: 1rem;
     margin-left: 1.5rem;
     margin-right: 1.5em;
     margin-bottom: 2rem;
 }
+
 .parrafos{
     color: wheat;
 }
+
 .parrafos__resaltado{
     text-decoration: underline;
 }
 
-/*vista mobile*/
+/*footer*/
 
+footer{
+    font-family: 'Neonderthaw', cursive;
+    background-color:#171717;
+    color: whitesmoke;
+    margin-top: 4rem;
+}
+#redes{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.redes__sociales{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.redes__sociales:hover{
+    opacity: 0.75;
+}
+
+/*vista mobile*/
 @media only screen and (max-width: 992px) {
     .principal{
         margin-left: 0%;

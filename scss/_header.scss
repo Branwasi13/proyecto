@@ -1,0 +1,38 @@
+
+
+/*header, logo y buscador*/
+.logo{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    &:hover{
+        opacity: 0.75;
+    }
+}
+
+.buscador{
+    width: 400px;
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+/*navbar*/
+.barra{
+    padding-top: .5rem;
+}
+
+.navegacion{
+    color:white;
+    &:focus{
+        background-color: $oro;
+    }
+}
+
+.items{
+    margin-left: 3rem ;
+    margin-right: 3rem ;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+

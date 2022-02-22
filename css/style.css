@@ -1,284 +1,274 @@
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
-
-/* reseteo los margenes*/
-*{
-    margin: 0;
-    padding: 0;
-}
-
-/*color de fondo de la pagina*/
-
-body{
-    background-color: #0e0e0efb;
-}
-
-/*quitar la decoracion de las anclas*/
-a{
-    text-decoration: none;
-}
-
 /*header, logo y buscador*/
-.logo{
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.logo {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
-.logo:hover{
-    opacity: 0.75;
+.logo:hover {
+  opacity: 0.75;
 }
 
-.buscador{
-    width: 400px;
+.buscador {
+  width: 400px;
 }
 
-.buscador:focus{
-    box-shadow: none;
+.buscador:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*navbar*/
-.barra{
-    padding-top: .5rem;
+.barra {
+  padding-top: .5rem;
 }
 
-.navegacion{
-    color:white;
+.navegacion {
+  color: white;
 }
 
-.navegacion:focus{
-    background-color: #ffab23;
+.navegacion:focus {
+  background-color: gold;
 }
 
-.items{
-    margin-left: 3rem ;
-    margin-right: 3rem ;
+.items {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
-.items:hover{
-    text-decoration: underline;
+.items:hover {
+  text-decoration: underline;
 }
 
-/*alineacion de los titulos y decoracion*/
-.titulos{
-    color: whitesmoke;
-    font-family: 'Lobster', cursive;
-    margin-top: .5em;
-    margin-bottom: 1rem;
-    text-decoration: underline;
+/*animacion*/
+@-webkit-keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-/*botones de ventas*/
-.ventas--botones {
-    font-size:15px;
-    font-family:Arial;
-    width: 140px;
-    height:50px;
-    border-width:1px;
-    color:rgba(0, 0, 0, 1);
-    border-color:#333333;
-    font-weight:bold;
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius:6px;
-    box-shadow:inset 0px 1px 0px 0px #fff6af;
-    text-shadow:inset 0px 1px 0px #ffee66;
-    background:linear-gradient(#ffec64, #ffab23);
-} 
-.ventas--botones:hover {
-    background: linear-gradient(#ffab23, #ffec64);
-}
-
-/*servicios*/
-.principal{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 3rem;
-}
-
-.serviciosParrafos {
-    color: wheat;
-    font-family: 'Oswald', sans-serif;
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*productos*/
-.productos{
-    margin-top: 4rem;
-    animation-name: aparicion;
-    animation-duration: 2s;
+.productos {
+  margin-top: 4rem;
+  -webkit-animation-name: aparicion;
+          animation-name: aparicion;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .caracteristicas {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-.ventas--precios{
-    color: gold;
+.ventas--precios {
+  color: gold;
 }
 
-.ventas--botones{
-    margin-top: 1rem;
+/*botones de los productos*/
+.ventas--botones {
+  margin-top: 1rem;
+  font-size: 15px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  border-width: 1px;
+  color: black;
+  border-color: #333333;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
+          box-shadow: inset 0px 1px 0px 0px #fff6af;
+  text-shadow: inset 0px 1px 0px #ffee66;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffec64), to(#ffab23));
+  background: linear-gradient(#ffec64, #ffab23);
+}
+
+.ventas--botones:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffab23), to(#ffec64));
+  background: linear-gradient(#ffab23, #ffec64);
+}
+
+/*servicios*/
+.principal {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3rem;
+}
+
+.serviciosParrafos {
+  color: wheat;
+  font-family: 'Oswald', sans-serif;
 }
 
 /*contacto/ubicaion*/
-.ubicacion{
-    margin-bottom: 5em;
+.ubicacion {
+  margin-bottom: 5em;
 }
 
-.formulario{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 1rem;
-    background-color: #171717;
-    color: whitesmoke;
-    border: solid 2px white;
+.formulario {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 1rem;
+  background-color: #171717;
+  color: whitesmoke;
+  border: solid 2px white;
 }
 
-.contacto{
-    margin-left: 1rem;
-    margin-top: 1rem;
+.contacto {
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
-.contacto__botones1 {
-    background-color: #333333;
-    margin-bottom: 2rem;
-    color: whitesmoke;
-}
-.contacto__botones1:hover{
-    text-transform: capitalize;
-    color: whitesmoke;
+.contacto .contacto__botones1 {
+  background-color: #333333;
+  margin-bottom: 2rem;
+  color: whitesmoke;
 }
 
-.contacto__botones2{
-    margin-left: 1rem;
-    margin-bottom: 2rem;
+.contacto .contacto__botones2 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
-.Mensaje{
-    width: 500px;
-    margin-bottom: 1rem;
+.Mensaje {
+  width: 500px;
+  margin-bottom: 1rem;
 }
 
 /*sobre nosotros*/
-
-.sobreNosotros{
-    margin-top: .5rem;
-    animation-name: aparicion;
-    animation-duration: 3s;
+.sobreNosotros {
+  margin-top: .5rem;
+  -webkit-animation-name: aparicion;
+          animation-name: aparicion;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
-@keyframes aparicion{
-    0%{
-        opacity: 0;
-    }
-
-    50%{
-        opacity: .5;
-    }
-
-    100%{
-        opacity: 1;
-    }
+.pagos {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5em;
+  margin-bottom: 2rem;
 }
 
-.pagos{
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5em;
-    margin-bottom: 2rem;
+footer {
+  font-family: 'Neonderthaw', cursive;
+  background-color: #171717;
+  color: whitesmoke;
+  margin-top: 4rem;
 }
 
-.parrafos{
-    color: wheat;
+#redes {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
-.parrafos__resaltado{
-    text-decoration: underline;
+.redes__sociales {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
-/*footer*/
-
-footer{
-    font-family: 'Neonderthaw', cursive;
-    background-color:#171717;
-    color: whitesmoke;
-    margin-top: 4rem;
-}
-#redes{
-    margin-top: .5em;
-    margin-bottom: .5em;
+.redes__sociales:hover {
+  opacity: 0.75;
 }
 
-.redes__sociales{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0efb;
 }
 
-.redes__sociales:hover{
-    opacity: 0.75;
+a {
+  text-decoration: none;
+}
+
+.parrafos {
+  color: wheat;
+}
+
+.parrafos .parrafos__resaltado {
+  text-decoration: underline;
+}
+
+/*alineacion de los titulos y decoracion*/
+.titulos {
+  color: whitesmoke;
+  font-family: 'Lobster', cursive;
+  margin-top: .5em;
+  margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 /*vista mobile*/
 @media only screen and (max-width: 992px) {
-    .principal{
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .barra{
-        padding-top: .5rem;
-    }
-
-    .imagenes{
-        width: 100%;
-    }
-
-    .productos{
-        margin-top: 3rem;
-    }
-
-    .videos{
-        width: 100%;
-        height: 250px;
-    }
-
-    .serviciosParrafos {
-        color: whitesmoke;
-        font-family: 'Oswald', sans-serif;
-    }
-
-    .redes__sociales{
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-
-    .parrafos{
-        text-align: center;
-    }
-
-    textarea{
-        width: 250px;
-    }
-
+  .principal {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .barra {
+    padding-top: .5rem;
+  }
+  .imagenes {
+    width: 100%;
+  }
+  .productos {
+    margin-top: 3rem;
+  }
+  .videos {
+    width: 100%;
+    height: 250px;
+  }
+  .serviciosParrafos {
+    color: wheat;
+    font-family: 'Oswald', sans-serif;
+  }
+  .redes__sociales {
+    margin-left: .5em;
+    margin-right: .5em;
+  }
+  .parrafos {
+    text-align: center;
+  }
+  textarea {
+    width: 250px;
+  }
 }
 
 /*vista mobil de contacto*/
 @media only screen and (max-width: 1250px) {
-
-    .formulario{
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .contacto{
-        margin-left: 0;
-    }
-    
-    .Mensaje{
-        width: 80%;
-    }
-
-    .caracteristicas {
-        align-items: center;
-    }
-
+  .formulario {
+    width: 100%;
+    margin-left: 0;
+  }
+  .contacto {
+    margin-left: 0;
+  }
+  .Mensaje {
+    width: 80%;
+  }
+  .caracteristicas {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
+/*# sourceMappingURL=style.css.map */

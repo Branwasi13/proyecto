@@ -3,17 +3,18 @@
 footer{
     font-family: 'Neonderthaw', cursive;
     background-color:#171717;
-    color: $importantes;
-    margin-top: 4rem;
+    color: map-get($estilos, importantes);
+    margin-top: map-get($estilos,espacio)+2;
 }
+
 #redes{
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-top: map-get($estilos,espacio)-1.5;
+    margin-bottom: map-get($estilos,espacio)-1.5;
 }
 
 .redes__sociales{
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: map-get($estilos,espacio)-.5;
+    margin-right: map-get($estilos,espacio)-.5;
     &:hover{
         opacity: 0.75;
     }

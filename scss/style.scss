@@ -15,7 +15,7 @@ a{
 }
 
 .parrafos{
-    color: $parrafos;
+    color: map-get($estilos, parrafos);
     .parrafos__resaltado{
         text-decoration: underline;
     }
@@ -23,10 +23,10 @@ a{
 
 /*alineacion de los titulos y decoracion*/
 .titulos{
-    color: $importantes;
+    color: map-get($estilos, importantes);
     font-family: 'Lobster', cursive;
-    margin-top: .5em;
-    margin-bottom: 1rem;
+    margin-top: map-get($estilos,espacio)-1.5;
+    margin-bottom: map-get($estilos,espacio)-1;
     text-decoration: underline;
 }
 
@@ -38,30 +38,29 @@ a{
     }
 
     .barra{
-        padding-top: .5rem;
+        padding-top: map-get($estilos,espacio)-1.5;
     }
 
     .imagenes{
-        width: 100%;
+        @include tamano(100%,auto);
     }
 
     .productos{
-        margin-top: 3rem;
+        margin-top: map-get($estilos,espacio)+1;
     }
 
     .videos{
-        width: 100%;
-        height: 250px;
+        @include tamano(100%,250px);
     }
 
     .serviciosParrafos {
-        color: $parrafos;
+        color: map-get($estilos, parrafos);
         font-family: 'Oswald', sans-serif;
     }
 
     .redes__sociales{
-        margin-left: .5em;
-        margin-right: .5em;
+        margin-left: map-get($estilos,espacio)-1.5;
+        margin-right: map-get($estilos,espacio)-1.5;
     }
 
     .parrafos{
@@ -69,7 +68,7 @@ a{
     }
 
     textarea{
-        width: 250px;
+        @include tamano(250px,auto);
     }
 
 }
@@ -78,7 +77,7 @@ a{
 @media only screen and (max-width: 1250px) {
 
     .formulario{
-        width: 100%;
+        @include tamano(100%,auto);
         margin-left: 0;
     }
 
@@ -87,7 +86,7 @@ a{
     }
     
     .Mensaje{
-        width: 80%;
+        @include tamano(80%,100px);
     }
 
     .caracteristicas {

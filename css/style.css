@@ -1,7 +1,7 @@
 /*header, logo y buscador*/
 .logo {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .logo:hover {
@@ -10,6 +10,7 @@
 
 .buscador {
   width: 400px;
+  height: auto;
 }
 
 .buscador:focus {
@@ -19,7 +20,7 @@
 
 /*navbar*/
 .barra {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .navegacion {
@@ -121,11 +122,12 @@
 
 /*contacto/ubicaion*/
 .ubicacion {
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 
 .formulario {
   width: 50%;
+  height: auto;
   margin-left: 25%;
   margin-top: 1rem;
   background-color: #171717;
@@ -133,30 +135,34 @@
   border: solid 2px white;
 }
 
-.contacto {
+.contacto, .contacto__botones1, .contacto__botones2 {
   margin-left: 1rem;
   margin-top: 1rem;
 }
 
-.contacto .contacto__botones1 {
+.contacto__botones1 {
   background-color: #333333;
   margin-bottom: 2rem;
   color: whitesmoke;
 }
 
-.contacto .contacto__botones2 {
-  margin-left: 1rem;
+.contacto__botones1:hover {
+  color: white;
+}
+
+.contacto__botones2 {
   margin-bottom: 2rem;
 }
 
 .Mensaje {
   width: 500px;
+  height: 100px;
   margin-bottom: 1rem;
 }
 
 /*sobre nosotros*/
 .sobreNosotros {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   -webkit-animation-name: aparicion;
           animation-name: aparicion;
   -webkit-animation-duration: 3s;
@@ -166,7 +172,7 @@
 .pagos {
   margin-top: 1rem;
   margin-left: 1.5rem;
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -178,13 +184,13 @@ footer {
 }
 
 #redes {
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .redes__sociales {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .redes__sociales:hover {
@@ -213,7 +219,7 @@ a {
 .titulos {
   color: whitesmoke;
   font-family: 'Lobster', cursive;
-  margin-top: .5em;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   text-decoration: underline;
 }
@@ -225,10 +231,11 @@ a {
     margin-right: 0%;
   }
   .barra {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
   .imagenes {
     width: 100%;
+    height: auto;
   }
   .productos {
     margin-top: 3rem;
@@ -242,14 +249,15 @@ a {
     font-family: 'Oswald', sans-serif;
   }
   .redes__sociales {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
   .parrafos {
     text-align: center;
   }
   textarea {
     width: 250px;
+    height: auto;
   }
 }
 
@@ -257,13 +265,15 @@ a {
 @media only screen and (max-width: 1250px) {
   .formulario {
     width: 100%;
+    height: auto;
     margin-left: 0;
   }
-  .contacto {
+  .contacto, .contacto__botones1, .contacto__botones2 {
     margin-left: 0;
   }
   .Mensaje {
     width: 80%;
+    height: 100px;
   }
   .caracteristicas {
     -webkit-box-align: center;

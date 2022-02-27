@@ -1,3 +1,11 @@
-$parrafos: wheat;
-$importantes: whitesmoke;
-$oro: gold;
+$estilos:(
+    parrafos: wheat,
+    importantes: whitesmoke,
+    oro: gold,
+    espacio:2rem
+);
+
+@mixin tamano($width, $height){
+    width: $width;
+    height: $height;
+}

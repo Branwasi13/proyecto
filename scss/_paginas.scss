@@ -16,26 +16,25 @@
 
 /*productos*/
 .productos{
-    margin-top: 4rem;
+    margin-top: map-get($estilos,espacio)+2;
     animation-name: aparicion;
     animation-duration: 2s;
 }
 
 .caracteristicas {
-    color: $importantes;
+    color: map-get($estilos, importantes);
 }
 
 .ventas--precios{
-    color: $oro;
+    color: map-get($estilos, oro);
 }
 
 /*botones de los productos*/
 .ventas--botones {
-    margin-top: 1rem;
+    margin-top: map-get($estilos,espacio)-1;
     font-size:15px;
     font-family:Arial;
-    width: 140px;
-    height:50px;
+    @include tamano(140px,50px);
     border-width:1px;
     color:rgba(0, 0, 0, 1);
     border-color:#333333;
@@ -56,61 +55,65 @@
 .principal{
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 3rem;
+    margin-bottom: map-get($estilos,espacio)+1;
 }
 
 .serviciosParrafos {
-    color: $parrafos;
+    color: map-get($estilos, parrafos);
     font-family: 'Oswald', sans-serif;
 }
 
 /*contacto/ubicaion*/
 .ubicacion{
-    margin-bottom: 5em;
+    margin-bottom:map-get($estilos,espacio)+3;
 }
 
 .formulario{
-    width: 50%;
+    @include tamano(50%,auto);
     margin-left: 25%;
-    margin-top: 1rem;
+    margin-top: map-get($estilos,espacio)-1;
     background-color: #171717;
-    color: $importantes;
+    color: map-get($estilos, importantes);
     border: solid 2px white;
 }
 
 .contacto{
-    margin-left: 1rem;
-    margin-top: 1rem;
-    .contacto__botones1 {
-        background-color: #333333;
-        margin-bottom: 2rem;
-        color: $importantes;
+    margin-left:map-get($estilos,espacio)-1;
+    margin-top:map-get($estilos,espacio)-1;
+}
+.contacto__botones1{
+    @extend.contacto;
+    background-color: #333333;
+    margin-bottom: map-get($estilos,espacio);
+    color: map-get($estilos, importantes);
+    &:hover{
+        color: white
     }
-    .contacto__botones2{
-        margin-left: 1rem;
-        margin-bottom: 2rem;
-    }
+}
+.contacto__botones2{
+    @extend.contacto;
+    margin-bottom: map-get($estilos,espacio);
 }
 
 
 .Mensaje{
-    width: 500px;
-    margin-bottom: 1rem;
+    @include tamano(500px,100px);
+    margin-bottom:map-get($estilos,espacio)-1;
 }
 
 /*sobre nosotros*/
 
 .sobreNosotros{
-    margin-top: .5rem;
+    margin-top:map-get($estilos,espacio)-1.5;
     animation-name: aparicion;
     animation-duration: 3s;
 }
 
 .pagos{
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5em;
-    margin-bottom: 2rem;
+    margin-top: map-get($estilos,espacio)-1;
+    margin-left: map-get($estilos,espacio)-.5;
+    margin-right: map-get($estilos,espacio)-.5;
+    margin-bottom: map-get($estilos,espacio);
 }
 
 

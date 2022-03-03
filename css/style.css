@@ -71,18 +71,31 @@
           animation-name: aparicion;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  background-color: #242424;
+  border-radius: 20px;
+  width: 75%;
+}
+
+.productos .productos__titulos {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  color: gold;
 }
 
 .caracteristicas {
   color: whitesmoke;
 }
 
-.ventas--precios {
+/*botones de los productos*/
+.ventas {
+  margin-bottom: 2rem;
+}
+
+.ventas .ventas--precios {
   color: gold;
 }
 
-/*botones de los productos*/
-.ventas--botones {
+.ventas .ventas--botones {
   margin-top: 1rem;
   font-size: 15px;
   font-family: Arial;
@@ -103,7 +116,7 @@
   background: linear-gradient(#ffec64, #ffab23);
 }
 
-.ventas--botones:hover {
+.ventas .ventas--botones:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffab23), to(#ffec64));
   background: linear-gradient(#ffab23, #ffec64);
 }
@@ -237,9 +250,6 @@ a {
     width: 100%;
     height: auto;
   }
-  .productos {
-    margin-top: 3rem;
-  }
   .videos {
     width: 100%;
     height: 250px;
@@ -258,6 +268,14 @@ a {
   textarea {
     width: 250px;
     height: auto;
+  }
+}
+
+/*vista mobil de todos los productos*/
+@media only screen and (max-width: 1275px) {
+  .productos {
+    margin-top: 3rem;
+    width: 98%;
   }
 }
 

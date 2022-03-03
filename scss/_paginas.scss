@@ -19,35 +19,45 @@
     margin-top: map-get($estilos,espacio)+2;
     animation-name: aparicion;
     animation-duration: 2s;
+    background-color:#242424;
+    border-radius: 20px;
+    width: 75%;
+    .productos__titulos{
+        font-size: map-get($estilos,espacio)-.75;
+        text-decoration: underline;
+        color: gold;
+    }
 }
 
 .caracteristicas {
     color: map-get($estilos, importantes);
 }
 
-.ventas--precios{
-    color: map-get($estilos, oro);
-}
-
 /*botones de los productos*/
-.ventas--botones {
-    margin-top: map-get($estilos,espacio)-1;
-    font-size:15px;
-    font-family:Arial;
-    @include tamano(140px,50px);
-    border-width:1px;
-    color:rgba(0, 0, 0, 1);
-    border-color:#333333;
-    font-weight:bold;
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-    border-bottom-left-radius:6px;
-    border-bottom-right-radius:6px;
-    box-shadow:inset 0px 1px 0px 0px #fff6af;
-    text-shadow:inset 0px 1px 0px #ffee66;
-    background:linear-gradient(#ffec64, #ffab23);
-    &:hover{
-        background: linear-gradient(#ffab23, #ffec64);
+.ventas{
+    margin-bottom: map-get($estilos, espacio);
+    .ventas--precios{
+        color: map-get($estilos, oro);
+    }
+    .ventas--botones {
+        margin-top: map-get($estilos,espacio)-1;
+        font-size:15px;
+        font-family:Arial;
+        @include tamano(140px,50px);
+        border-width:1px;
+        color:rgba(0, 0, 0, 1);
+        border-color:#333333;
+        font-weight:bold;
+        border-top-left-radius:6px;
+        border-top-right-radius:6px;
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+        box-shadow:inset 0px 1px 0px 0px #fff6af;
+        text-shadow:inset 0px 1px 0px #ffee66;
+        background:linear-gradient(#ffec64, #ffab23);
+        &:hover{
+            background: linear-gradient(#ffab23, #ffec64);
+        }
     }
 }
 

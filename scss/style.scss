@@ -45,10 +45,6 @@ a{
         @include tamano(100%,auto);
     }
 
-    .productos{
-        margin-top: map-get($estilos,espacio)+1;
-    }
-
     .videos{
         @include tamano(100%,250px);
     }
@@ -72,7 +68,13 @@ a{
     }
 
 }
-
+/*vista mobil de todos los productos*/
+@media only screen and (max-width: 1275px) {
+    .productos{
+        margin-top: map-get($estilos,espacio)+1;
+        width: 98%;
+    }
+}
 /*vista mobil de contacto*/
 @media only screen and (max-width: 1250px) {
 

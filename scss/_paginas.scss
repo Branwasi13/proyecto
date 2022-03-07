@@ -1,17 +1,10 @@
 
-/*animacion*/
-@keyframes aparicion{
-    0%{
-        opacity: 0;
-    }
 
-    50%{
-        opacity: .5;
-    }
+/*index corrousel*/
 
-    100%{
-        opacity: 1;
-    }
+.imagenes{
+    height: 500px;
+    object-fit: cover;
 }
 
 /*productos*/
@@ -28,7 +21,41 @@
         color: gold;
     }
 }
+.description{
+    background-color:black;
+    border-radius: 25px;
+    position: relative;
+}
+.description::before, .description::after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+    border-radius: 25px;
+	z-index: -1;
+	animation: steam 60s linear infinite;
+}
 
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.description::after {
+	filter: blur(8px);
+} 
 .caracteristicas {
     color: map-get($estilos, importantes);
 }
@@ -63,13 +90,11 @@
 
 /*servicios*/
 .principal{
-    margin-left: 15%;
-    margin-right: 15%;
     margin-bottom: map-get($estilos,espacio)+1;
 }
 
-.serviciosParrafos {
-    color: map-get($estilos, parrafos);
+.servicios__Parrafos {
+    color: map-get($estilos, oro);
     font-family: 'Oswald', sans-serif;
 }
 
@@ -80,16 +105,15 @@
 
 .formulario{
     @include tamano(50%,auto);
-    margin-left: 25%;
-    margin-top: map-get($estilos,espacio)-1;
+    margin: 1rem 0 0 25%;
     background-color: #171717;
     color: map-get($estilos, importantes);
     border: solid 2px white;
 }
 
 .contacto{
-    margin-left:map-get($estilos,espacio)-1;
-    margin-top:map-get($estilos,espacio)-1;
+    margin: 1rem 0;
+    padding: 0 .5rem;
 }
 .contacto__botones1{
     @extend.contacto;
@@ -103,8 +127,7 @@
 .contacto__botones2{
     @extend.contacto;
     margin-bottom: map-get($estilos,espacio);
-}
-
+}   
 
 .Mensaje{
     @include tamano(500px,100px);
@@ -114,14 +137,12 @@
 /*sobre nosotros*/
 
 .sobreNosotros{
-    margin-top:map-get($estilos,espacio)-1.5;
-    animation-name: aparicion;
-    animation-duration: 3s;
+    margin-top:map-get($estilos,espacio)-1;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 2px 2px 15px 3px #ffab23;
+    border-radius: 20px 20px 150px 150px;
 }
 
 .pagos{
-    margin-top: map-get($estilos,espacio)-1;
-    margin-left: map-get($estilos,espacio)-.5;
-    margin-right: map-get($estilos,espacio)-.5;
-    margin-bottom: map-get($estilos,espacio);
+    margin: 1rem 1.5rem 2rem;
 }

@@ -8,13 +8,11 @@ footer{
 }
 
 #redes{
-    margin-top: map-get($estilos,espacio)-1.5;
-    margin-bottom: map-get($estilos,espacio)-1.5;
+    margin: .5rem 0;
 }
 
 .redes__sociales{
-    margin-left: map-get($estilos,espacio)-.5;
-    margin-right: map-get($estilos,espacio)-.5;
+    margin: 0 1.5rem;
     &:hover{
         opacity: 0.75;
     }

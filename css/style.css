@@ -1,7 +1,6 @@
 /*header, logo y buscador*/
 .logo {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: .5rem 0;
 }
 
 .logo:hover {
@@ -32,36 +31,21 @@
 }
 
 .items {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin: 0 3rem;
 }
 
 .items:hover {
-  text-decoration: underline;
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+  background-color: #1d1d1d;
+  border-radius: 20px;
 }
 
-/*animacion*/
-@-webkit-keyframes aparicion {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes aparicion {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    opacity: 1;
-  }
+/*index corrousel*/
+.imagenes {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*productos*/
@@ -80,6 +64,56 @@
   font-size: 1.25rem;
   text-decoration: underline;
   color: gold;
+}
+
+.description {
+  background-color: black;
+  border-radius: 25px;
+  position: relative;
+}
+
+.description::before, .description::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: 25px;
+  z-index: -1;
+  -webkit-animation: steam 60s linear infinite;
+          animation: steam 60s linear infinite;
+}
+
+@-webkit-keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.description::after {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
 }
 
 .caracteristicas {
@@ -123,13 +157,11 @@
 
 /*servicios*/
 .principal {
-  margin-left: 15%;
-  margin-right: 15%;
   margin-bottom: 3rem;
 }
 
-.serviciosParrafos {
-  color: wheat;
+.servicios__Parrafos {
+  color: gold;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -141,16 +173,15 @@
 .formulario {
   width: 50%;
   height: auto;
-  margin-left: 25%;
-  margin-top: 1rem;
+  margin: 1rem 0 0 25%;
   background-color: #171717;
   color: whitesmoke;
   border: solid 2px white;
 }
 
 .contacto, .contacto__botones1, .contacto__botones2 {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
+  padding: 0 .5rem;
 }
 
 .contacto__botones1 {
@@ -175,18 +206,15 @@
 
 /*sobre nosotros*/
 .sobreNosotros {
-  margin-top: 0.5rem;
-  -webkit-animation-name: aparicion;
-          animation-name: aparicion;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  margin-top: 1rem;
+  background-color: #111111;
+  -webkit-box-shadow: 2px 2px 15px 3px #ffab23;
+          box-shadow: 2px 2px 15px 3px #ffab23;
+  border-radius: 20px 20px 150px 150px;
 }
 
 .pagos {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 2rem;
+  margin: 1rem 1.5rem 2rem;
 }
 
 footer {
@@ -197,31 +225,56 @@ footer {
 }
 
 #redes {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin: .5rem 0;
 }
 
 .redes__sociales {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .redes__sociales:hover {
   opacity: 0.75;
 }
 
+/*animacion de los titulos*/
+@-webkit-keyframes destacar {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: gold;
+  }
+  100% {
+    color: darkgoldenrod;
+  }
+}
+@keyframes destacar {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: gold;
+  }
+  100% {
+    color: darkgoldenrod;
+  }
+}
+
+/*reseteo de los margtenes de las paginas*/
 body {
   margin: 0;
   padding: 0;
   background-color: #0e0e0efb;
 }
 
+/*quitar las decoraciones de los anclas*/
 a {
   text-decoration: none;
 }
 
+/*decoracion de los parrafos de la description de los productos y sobre nosotros*/
 .parrafos {
-  color: wheat;
+  color: gold;
 }
 
 .parrafos .parrafos__resaltado {
@@ -229,58 +282,100 @@ a {
 }
 
 /*alineacion de los titulos y decoracion*/
-.titulos {
+.titulos, .titulos2 {
   color: whitesmoke;
   font-family: 'Lobster', cursive;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin: .5rem 0 1rem;
   text-decoration: underline;
+  font-size: 2.25rem;
+  -webkit-animation-name: destacar;
+          animation-name: destacar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.titulos2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  animation-direction: alternate-reverse;
 }
 
 /*vista mobile*/
 @media only screen and (max-width: 992px) {
-  .principal {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
+  /*navbar (padding y quitar las decoraciones de los items)*/
   .barra {
     padding-top: 0.5rem;
   }
-  .imagenes {
+  .items:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+  }
+  /*imagenes y videos de servicios*/
+  .servicios__imagenes {
     width: 100%;
     height: auto;
   }
+  .servicios__Parrafos {
+    color: wheat;
+    font-family: 'Oswald', sans-serif;
+  }
+  /*imagenes del carrousel del index*/
+  .imagenes {
+    height: 250px;
+  }
+  /*videos de todas las paginas*/
   .videos {
     width: 100%;
     height: 250px;
   }
-  .serviciosParrafos {
-    color: wheat;
-    font-family: 'Oswald', sans-serif;
+  /*bordes del contenido de sobre nosotros*/
+  .sobreNosotros {
+    border-radius: 20px;
   }
+  /*titulos de todas las paginas*/
+  .titulos, .titulos2 {
+    font-size: 1.5rem;
+  }
+  .titulos2 {
+    font-size: 1.25rem;
+  }
+  /*parrafos de los productos y sobre nosotros*/
+  .parrafos {
+    text-align: center;
+  }
+  /*correcion de la animacion RGB*/
+  .description::before, .description::after {
+    left: 0;
+    top: 0;
+    width: calc(100%);
+    height: calc(100%);
+  }
+  /*footer*/
   .redes__sociales {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .parrafos {
-    text-align: center;
-  }
-  textarea {
-    width: 250px;
-    height: auto;
+  .derechos {
+    font-size: 14px;
   }
 }
 
-/*vista mobil de todos los productos*/
+/*vista mobil del index*/
+@media only screen and (min-width: 1400px) {
+  /*imagenes del index*/
+  .imagenes {
+    height: 650px;
+  }
+}
+
+/*vista mobil de contacto/porductos*/
 @media only screen and (max-width: 1275px) {
-  .productos {
-    margin-top: 3rem;
-    width: 98%;
-  }
-}
-
-/*vista mobil de contacto*/
-@media only screen and (max-width: 1250px) {
+  /*contacto*/
   .formulario {
     width: 100%;
     height: auto;
@@ -292,6 +387,11 @@ a {
   .Mensaje {
     width: 80%;
     height: 100px;
+  }
+  /*productos*/
+  .productos {
+    margin-top: 3rem;
+    width: 98%;
   }
   .caracteristicas {
     -webkit-box-align: center;

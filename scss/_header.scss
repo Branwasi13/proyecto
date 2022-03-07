@@ -2,8 +2,7 @@
 
 /*header, logo y buscador*/
 .logo{
-    margin-top: map-get($estilos,espacio)-1.5;
-    margin-bottom: map-get($estilos,espacio)-1.5;
+    margin: .5rem 0;
     &:hover{
         opacity: 0.75;
     }
@@ -29,10 +28,11 @@
 }
 
 .items{
-    margin-left: map-get($estilos,espacio)+1;
-    margin-right: map-get($estilos,espacio)+1;
+    margin: 0 3rem;
     &:hover{
-        text-decoration: underline;
+        text-decoration: 2px underline;
+        background-color: rgb(29, 29, 29);
+        border-radius: 20px;
     }
 }
 

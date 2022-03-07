@@ -3,19 +3,34 @@
 @import "paginas";
 @import "footer";
 
+/*animacion de los titulos*/
+@keyframes destacar{
+    0%{
+        color:yellow;
+    }
+    50%{
+        color:gold;
+    }
+    100%{
+        color:darkgoldenrod;
+    }
+}
 
+/*reseteo de los margtenes de las paginas*/
 body{
     margin: 0;
     padding: 0;
     background-color: #0e0e0efb;
 }
 
+/*quitar las decoraciones de los anclas*/
 a{
     text-decoration: none;
 }
 
+/*decoracion de los parrafos de la description de los productos y sobre nosotros*/
 .parrafos{
-    color: map-get($estilos, parrafos);
+    color: map-get($estilos, oro);
     .parrafos__resaltado{
         text-decoration: underline;
     }
@@ -25,59 +40,101 @@ a{
 .titulos{
     color: map-get($estilos, importantes);
     font-family: 'Lobster', cursive;
-    margin-top: map-get($estilos,espacio)-1.5;
-    margin-bottom: map-get($estilos,espacio)-1;
+    margin: .5rem 0 1rem;
     text-decoration: underline;
+    font-size: map-get($estilos, espacio)+.25;
+    animation-name: destacar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.titulos2{
+    @extend .titulos;
+    margin-top: map-get($estilos, espacio);
+    font-size: map-get($estilos, espacio)-.25;
+    animation-direction: alternate-reverse;
 }
 
 /*vista mobile*/
 @media only screen and (max-width: 992px) {
-    .principal{
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
+    /*navbar (padding y quitar las decoraciones de los items)*/
     .barra{
         padding-top: map-get($estilos,espacio)-1.5;
     }
+    .items:hover{
+        text-decoration:none;
+        background-color: rgba(0, 0, 0, 0) ;
+        border-radius: 0;
+    }
 
-    .imagenes{
+    /*imagenes y videos de servicios*/
+    .servicios__imagenes{
         @include tamano(100%,auto);
     }
-
-    .videos{
-        @include tamano(100%,250px);
-    }
-
-    .serviciosParrafos {
+    .servicios__Parrafos {
         color: map-get($estilos, parrafos);
         font-family: 'Oswald', sans-serif;
     }
 
-    .redes__sociales{
-        margin-left: map-get($estilos,espacio)-1.5;
-        margin-right: map-get($estilos,espacio)-1.5;
+    /*imagenes del carrousel del index*/
+    .imagenes{
+        height: 250px;
     }
 
+    /*videos de todas las paginas*/
+    .videos{
+        @include tamano(100%,250px);
+    }
+
+    /*bordes del contenido de sobre nosotros*/
+    .sobreNosotros{
+        border-radius: 20px;
+    }
+
+    /*titulos de todas las paginas*/
+    .titulos{
+        font-size: map-get($estilos, espacio)-.5;
+    }
+    .titulos2{
+        font-size: map-get($estilos, espacio)-.75;
+    }
+
+    /*parrafos de los productos y sobre nosotros*/
     .parrafos{
         text-align: center;
     }
 
-    textarea{
-        @include tamano(250px,auto);
+    /*correcion de la animacion RGB*/
+    .description::before, .description::after {
+        left: 0;
+	    top: 0;
+	    width: calc(100%);
+	    height: calc(100%);
+    }
+
+    /*footer*/
+    .redes__sociales{
+        margin-left: map-get($estilos,espacio)-1.5;
+        margin-right: map-get($estilos,espacio)-1.5;
+    }
+    .derechos{
+        font-size: 14px;
     }
 
 }
-/*vista mobil de todos los productos*/
+
+/*vista mobil del index*/
+@media only screen and (min-width: 1400px) {
+    /*imagenes del index*/
+    .imagenes {
+        height: 650px;
+    }
+}
+
+/*vista mobil de contacto/porductos*/
 @media only screen and (max-width: 1275px) {
-    .productos{
-        margin-top: map-get($estilos,espacio)+1;
-        width: 98%;
-    }
-}
-/*vista mobil de contacto*/
-@media only screen and (max-width: 1250px) {
 
+    /*contacto*/
     .formulario{
         @include tamano(100%,auto);
         margin-left: 0;
@@ -91,8 +148,13 @@ a{
         @include tamano(80%,100px);
     }
 
+
+    /*productos*/
+    .productos{
+        margin-top: map-get($estilos,espacio)+1;
+        width: 98%;
+    }
     .caracteristicas {
         align-items: center;
     }
-
 }
